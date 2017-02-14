@@ -1,6 +1,13 @@
 #Ionic2-benchmark
 
-##1- Ionic 2 Project Structure:
+##1- Install Ionic2
+
+First, install Node.js. Then, install the latest Cordova and Ionic command-line tools in your terminal. Follow the Android and iOS platform guides to install required tools for development.
+
+Then run command:
+    npm install -g cordova ionic
+
+##2- Ionic 2 Project Structure:
 
 <img src="IONIC_2_project_structure.png">
   
@@ -34,11 +41,11 @@
 
 * **/src/app** : Starting with folders, we can see that the bulk of our app lives here: pages, services, etc.
 
-* **src/app/pages** : This folder is containing all pages of your application. Within pages you’ll again find subfolders. Each page is implemented as an Angular 2 component (you’ll learn more about Angular 2 components later on). As each component implementation can consist of multiple files, the files belonging to one component are kept in one subfolder of app/pages. For instance, in the initial project structure you can find a folder app/pages/home which contains three files: home.js, home.html and home.scss. All these files belong to the home page of the app. home.js contains the implementation of the corresponding class HomePage. The template code for the HomePage component is stored in home.html and SCSS styling is for that template is available in home.scss.
+* **/src/app/pages** : This folder is containing all pages of your application. Within pages you’ll again find subfolders. Each page is implemented as an Angular 2 component (you’ll learn more about Angular 2 components later on). As each component implementation can consist of multiple files, the files belonging to one component are kept in one subfolder of app/pages. For instance, in the initial project structure you can find a folder app/pages/home which contains three files: home.js, home.html and home.scss. All these files belong to the home page of the app. home.js contains the implementation of the corresponding class HomePage. The template code for the HomePage component is stored in home.html and SCSS styling is for that template is available in home.scss.
 
-* **src/app/themes** : This folder will contain all SCSS files which contain styling on application level. If you take a look into that folder you’ll find a core SCSS file as well as platform specific SCSS files. Another SCSS file is containing SCSS variables
+* **/src/app/themes** : This folder will contain all SCSS files which contain styling on application level. If you take a look into that folder you’ll find a core SCSS file as well as platform specific SCSS files. Another SCSS file is containing SCSS variables
 
-* **src/app/app.js or app.ts or main.ts** : Finally some code! This is where we bootstrap our application and where you will find your app’s @App decorator. There are a handful of global settings you’ll want to pass in. Most importantly, you’ll want to pass your app’s root template, config and list of providers.
+* **/src/app/app.js or app.ts or main.ts** : Finally some code! This is where we bootstrap our application and where you will find your app’s @App decorator. There are a handful of global settings you’ll want to pass in. Most importantly, you’ll want to pass your app’s root template, config and list of providers.
 
 * **www**: This is where your index.html file lives. However, don’t be fooled into thinking this is where your app should live. Put all of your application scripts in the ./app folder.
 
