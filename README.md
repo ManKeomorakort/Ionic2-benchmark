@@ -4,7 +4,7 @@
 
 <img src="Ionic-2-project-structure-2.png">
   
-* **config.xml** : This contains configurations like the app name, and the package name, that will be used to install our app into an actual device.
+* **config.xml** : This contains configurations like the app name, and the package name, that will be used to install our app into an actual device. This configuration file is used by Cordova and includes settings which are relevant for building your application for the iOS and Android platform.
 
 * **cordova** :
 
@@ -14,7 +14,7 @@
   
 * **node_modules** - Contains the npm packages listed in the package.json file. These are packages necessary for building the ionic app.
 
-* **package.json** : If you are familiar with npm, you will recognize this immediately. If not, then this file describes your app’s production and development dependencies.
+* **package.json** : This file contains all dependencies (NPM packages) of our application. You can add new packages or update the version of packages already included. By executing the command npm install in the project directory the dependencies listed in package.json are downloaded and added to the project automatically.
 
 * **platforms** : This is where platform specific builds, build tools and packages/libraries are stored. You will find a folder for the platform your are building on. To add a platform, android for example, simply run ionic platform add android, and this will add the folder android folder to this folder.
 
