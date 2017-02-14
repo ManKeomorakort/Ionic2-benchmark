@@ -5,6 +5,7 @@
 First, install Node.js. Then, install the latest Cordova and Ionic command-line tools in your terminal. Follow the Android and iOS platform guides to install required tools for development.
 
 Then run command:
+
     npm install -g cordova ionic
 
 ##2- Ionic 2 Project Structure:
