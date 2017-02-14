@@ -2,17 +2,7 @@
 
 ##1- Ionic 2 Project Structure:
 
-        ├── config.xml
-        ├── hooks
-        ├── ionic.config.json
-        ├── node_modules
-        ├── package.json
-        ├── platforms
-        ├── plugins
-        ├── resources
-        ├── src
-        ├── tsconfig.json
-        ├── tslint.json
+<img src="Ionic-2-project-structure-2.png">
    
   -**config.xml** : This contains configurations like the app name, and the package name, that will be used to install our app into an actual device.
   
