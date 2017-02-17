@@ -1,36 +1,56 @@
 <ion-content>
 
     <div padding [@flyInBottomFast]="cloudState" id="cloud-layer">
+        <form (ngSubmit)="login()" #registerForm="ngForm">
+            <ion-row>
+                <ion-col>
+                    <img [@flyInBottomSlow]="logoState" src="assets/images/joshuamorony.png" />
+                </ion-col>
+            </ion-row>
 
-        <ion-row>
-            <ion-col>
-                <img [@flyInBottomSlow]="logoState" src="assets/images/joshuamorony.png" />
-            </ion-col>
-        </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-list inset [@bounceInBottom]="formState">
 
-        <ion-row>
-            <ion-col>
-                <ion-list inset [@bounceInBottom]="formState">
+                        <ion-item>
+                            <ion-label>Username</ion-label>
+                            <ion-input type="text" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
+                        </ion-item>
 
-                    <ion-item>
-                        <ion-label>Username</ion-label>
-                        <ion-input type="text"></ion-input>
-                    </ion-item>
+                        <ion-item>
+                            <ion-label>Password</ion-label>
+                            <ion-input type="password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+                        </ion-item>
 
-                    <ion-item>
-                        <ion-label>Password</ion-label>
-                        <ion-input type="password"></ion-input>
-                    </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
 
-                </ion-list>
-            </ion-col>
-        </ion-row>
-
-        <ion-row>
-            <ion-col>
-                <button ion-button class="login-button" [@fadeIn]="loginState">Login</button>
-            </ion-col>
-        </ion-row>
-
+            <ion-row>
+                <ion-col>
+                    <button ion-button class="login-button" [@fadeIn]="loginState" full type="submit">Login</button>
+                    <button ion-button class="register-button" color="secondary" [@fadeIn]="loginState" (click)="createAccount()">Create New Account</button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-label [@fadeIn]="loginState">OR</ion-label>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <button ion-button item-right icon-left color="facebook" class="login-facebook-button" [@fadeIn]="loginState">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    Facebook
+                </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button item-right icon-left color="google" class="login-google-button" [@fadeIn]="loginState">
+                    <ion-icon name="logo-googleplus"></ion-icon>
+                    Google
+                </button>
+                </ion-col>
+            </ion-row>
+        </form>
     </div>
 </ion-content>
