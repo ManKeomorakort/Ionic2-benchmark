@@ -15,3 +15,7 @@ https://github.com/etewiah/dreamhouse-mobile-ionic
 A project full of ionic 2 components and samples - to make life easier :)
 
 https://github.com/yannbf/ionic2-components
+
+
+A Ionic Plugin for caching, works for any tags, and will show a progress circle when the download is not done
+https://github.com/BenBBear/ionic-cache-src
