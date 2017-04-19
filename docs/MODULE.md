@@ -1,6 +1,5 @@
-==========================
-= How to create a module =
-==========================
+
+How to create a module
 
 1.	Run : npm init
 	This command will generate your module package.json file
@@ -19,9 +18,8 @@ Once you have finished with your module, you have to install it in your applicat
 
 If you want to compile a package, you must create a tsconfig.json file (run�: tsc --init) at the root of your package, set the compilerOptions (declaration, sourceMap set to true, and inculde/exclude the folders you want to compile). Then compile the package by running�: tsc -w
 
-=============================================
-= How to install a module from a local file =
-=============================================
+
+How to install a module from a local file =
 
 =>	In your project, run : npm install <path>
 	Where <path> is the path to your module (ex : "../Test_module")
@@ -30,9 +28,8 @@ If you want to compile a package, you must create a tsconfig.json file (run�: 
 For more info : https://docs.npmjs.com/cli/install
 Your module will be added to node_modules but if you want to add it to the dependencies of your application package.json file you have to run  npm install <path> --save
 
-==========================
-= How to use your module =
-==========================
+
+How to use your module 
 
 =>	Go to the file where you want to use your module and import it (ex : 	import { Restaurant } from 'testmod0/test-module')
 
