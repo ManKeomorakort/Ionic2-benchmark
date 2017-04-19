@@ -24,7 +24,7 @@ If you want to compile a package, you must create a tsconfig.json file (run�: 
 =============================================
 
 =>	In your project, run : npm install <path>
-	Where <path> is the path to your module (ex : "../ERSYS_hrm/Test_module")
+	Where <path> is the path to your module (ex : "../Test_module")
 	Use double quotes (does not work with single quotes)
 
 For more info : https://docs.npmjs.com/cli/install
